@@ -60,6 +60,7 @@ nav .menubutton{
 
 
 .menu{
+	padding: 0.5rem 0;
 	background: #fff;
 	box-shadow: 0 .6rem 1.25rem rgba(0,0,0,.25);
 }
@@ -80,6 +81,20 @@ nav .menubutton{
 	display: block;
 }
 
+
+.menu li:hover:after{
+ 	content: "";
+    display: block;
+    background:rgba(255, 0, 0, 0.10);
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    right:-20%;
+	margin-top:-50%;
+    transform: rotate(45deg)
+}
+
+
 .menu li a{
 	color:#727272; 
 	font-size: 14px;
@@ -95,6 +110,7 @@ nav .menubutton{
 .menu .level1{
 	padding: 1rem 0;
 	border-right:1px solid #DEDEDE;
+	z-index: 0;
 }
 
 .menu ul li:first-child, .menu ul li:first-child a{
@@ -114,6 +130,7 @@ nav .menubutton{
 	top:0;
 	left:100%;
 	height: 100%;
+	z-index: 2;
 }
 
 	
@@ -126,6 +143,7 @@ nav .menubutton{
 	top:0;
 	left:100%;
 	height: 100%;
+	z-index: 3;
 }
 
 
