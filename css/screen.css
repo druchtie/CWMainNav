@@ -82,6 +82,7 @@ nav .menubutton{
 }
 
 
+/*
 .menu li:hover:after{
  	content: "";
     display: block;
@@ -93,7 +94,20 @@ nav .menubutton{
 	margin-top:-50%;
     transform: rotate(45deg)
 }
+*/
 
+.menu li:hover:after{
+ 	content: "";
+    display: block;
+/*  background:rgba(255, 0, 0, 0.10);*/
+    height: 40rem;
+    width: 40rem;
+    position: absolute;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    left:4rem;
+    
+}
 
 .menu li a{
 	color:#727272; 
@@ -131,6 +145,7 @@ nav .menubutton{
 	left:100%;
 	height: 100%;
 	z-index: 2;
+	width: 150%;
 }
 
 	
@@ -144,6 +159,7 @@ nav .menubutton{
 	left:100%;
 	height: 100%;
 	z-index: 3;
+
 }
 
 
