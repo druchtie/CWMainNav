@@ -1,0 +1,119 @@
+ 
+/*
+Orange 	#FF7C19 
+Red 	#C60000
+Blue 	#00AEEF
+Green 	#5DA700
+Black	#222222
+		#727272
+		#A7A7A7
+		#DEDEDE
+		#F8F8F8
+*/
+
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+nav{
+	background: #F8F8F8;
+	height: 3.5rem
+}
+
+nav .logo{
+	background: #A7A7A7;
+	height: 3.5rem;
+	width: 5rem;
+	line-height: 3.5rem;
+	display: block;
+	margin: 0 .5rem 0 0;
+	float: left;
+	text-align: center;
+}
+
+nav .menubutton{
+	line-height: 3.5rem;
+	padding: 0 0.5rem;
+	margin: 0 0.5rem;
+	float: left;
+}
+
+
+
+/* !menu */
+.menu{
+	background: #fff;
+	box-shadow: 0 .25rem 1rem rgba(0,0,0,.25);
+}
+
+.menu li{
+	padding: 0 1rem;
+	line-height: 2rem; 
+	display: block;
+}
+
+.menu li a{
+	color:#222; 
+	text-decoration: none;
+}
+.menu li a:hover{
+	color:#00AEEF; 
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* !level1 */
+.menu .level1{
+	padding: 1rem 0;
+	border-right:1px solid #DEDEDE;
+}
+
+.menu .level1 ul li:first-child{
+   column-span: all;
+	font-weight: 600;
+	line-height: 1.5rem;
+	color:#222;
+}
+
+/* !level2 */
+.menu .level2{
+	display: none;	
+	padding: 1rem 0;
+	border-right:1px solid #DEDEDE;
+	position: absolute;
+	top:0;
+	left:100%;
+	height: 100%;
+}
+
+	
+/* !level3 */
+.menu .level3{
+	display: none;
+	column-count: 2;	
+	padding: 1rem 0;
+	position: absolute;
+	top:0;
+	left:100%;
+	height: 100%;
+}
+
+
+.menu .level1 li:hover > .level2{
+	display: block;
+}	
+
+.menu .level1 li:hover > a{
+	color:#00AEEF; 
+}	
+
+.menu .level2 li:hover > .level3{
+	display: block;
+}	
+
+
