@@ -59,22 +59,22 @@ nav .menubutton{
 /* !menu */
 
 
+
 .menu{
 	padding: 0.5rem  0 1rem 0;
 	background: #fff;
 	box-shadow: 0 .6rem 1.25rem rgba(0,0,0,.25);
-}
-
-.menu{
 	opacity: 0;
     transition: all 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
     display: none;
+    transform: translateY(-5rem);
  }
 
 .menu:hover,
 .menubutton:hover ~  .menu{
 	opacity:1;
 	display: block;
+	transform: translateY(0);
 }
 
 .menu li{
@@ -107,6 +107,15 @@ nav .menubutton{
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.menu .level1 li:hover > .level2{
+	display: block;
+}	
+
+.menu .level1 li:hover > a{
+	color:#00AEEF; 
+}	
+
 
 /* !level1 */
 .menu .level1{
@@ -150,16 +159,19 @@ nav .menubutton{
 }
 
 
-.menu .level1 li:hover > .level2{
-	display: block;
-}	
 
-.menu .level1 li:hover > a{
-	color:#00AEEF; 
-}	
 
 .menu .level2 li:hover > .level3{
 	display: block;
 }	
 
+
+.menu li  a.auctioninactive{
+	color:#DEDEDE;
+}
+
+.menu li a.auctioninactive:hover,
+.menu li:hover > a.auctioninactive{
+	color:#A7A7A7;
+}
 
